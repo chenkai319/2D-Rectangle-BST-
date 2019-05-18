@@ -17,6 +17,7 @@ before, between, or after the command name and its parameters. All coordinates w
 values small enough to fit in a 32-bit int variable.
 
 -----------------------Methods--------------
+
 insert name x y w h
 
 remove name
@@ -32,6 +33,7 @@ search name
 dump
 
 -----------------------Descriptions-----------------
+
 insert name x y w h
 
 Insert a rectangle named name with upper left corner (x, y), width w and height h. It is
