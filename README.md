@@ -16,7 +16,7 @@ commands are as follows. The commands are free-format in that any number of spac
 before, between, or after the command name and its parameters. All coordinates will be signed
 values small enough to fit in a 32-bit int variable.
 
-Methods--------------
+-----------------------Methods--------------
 insert name x y w h
 remove name
 remove x y w h
@@ -24,9 +24,10 @@ regionsearch x y w h
 intersections
 search name
 dump
-----------------------
 
+-----------------------Descriptions-----------------
 insert name x y w h
+
 Insert a rectangle named name with upper left corner (x, y), width w and height h. It is
 permissible for two or more rectangles to have the same name, and it is permissible for two or
 more rectangles to have the same spatial dimensions and position. The name must begin with a
@@ -36,15 +37,18 @@ rectangles must fit within the “world box" that is 1024 by 1024 units in size 
 corner at (0, 0). If a rectangle is all or partly out of this box, it should be rejected for insertion.
 
 remove name
+
 Remove the rectangle with name name. If two or more rectangles have the same name, then any
 one such rectangle may be removed. If no rectangle exists with this name, it should be so reported.
 
 remove x y w h
+
 Remove the rectangle with the specified dimensions. If two or more rectangles have the same
 dimensions, then any one such rectangle may be removed. If no rectangle exists with these
 dimensions, it should be so reported.
 
 regionsearch x y w h
+
 Report all rectangles currently in the database that intersect the query rectangle specified by the 
 regionsearch parameters. For each such rectangle, list out its name and coordinates. A
 regionsearch command should be rejected if the height or width is not greater than 0. However, it
@@ -52,8 +56,10 @@ is (syntactically) acceptable for the regionsearch rectangle to be all or partly
 by 1024 world box.
 
 intersections
+
 Report all pairs of rectangles within the database that intersect.
 
 search name
+
 Return the information about the rectangle(s), if any, that have name name. If there are more than
 one rectangle with the same name, you should return the info for all of them. 
