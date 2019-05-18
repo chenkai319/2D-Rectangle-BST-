@@ -1,0 +1,29 @@
+Test Cases:
+
+dump
+
+insert a 1 0 2 4
+
+	insert b 4 3 6 1
+
+insert c 2 5     123 6
+
+dump
+
+
+------------------------------
+
+
+Result: 
+
+ST dump:
+Node has depth 0, Value (null)
+BST size is: 0
+Rectangle accepted:(a, 1, 0, 2, 4)
+Rectangle accepted:(b, 4, 3, 6, 1)
+Rectangle accepted:(c, 2, 5, 123, 6)
+BST dump:
+Node has depth 0, Value (a, 1, 0, 2, 4)
+Node has depth 1, Value (b, 4, 3, 6, 1)
+Node has depth 2, Value (c, 2, 5, 123, 6)
+BST size is: 3
