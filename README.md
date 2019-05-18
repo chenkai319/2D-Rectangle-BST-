@@ -18,11 +18,17 @@ values small enough to fit in a 32-bit int variable.
 
 -----------------------Methods--------------
 insert name x y w h
+
 remove name
+
 remove x y w h
+
 regionsearch x y w h
+
 intersections
+
 search name
+
 dump
 
 -----------------------Descriptions-----------------
